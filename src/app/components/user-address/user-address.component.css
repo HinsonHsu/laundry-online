@@ -1,0 +1,67 @@
+.shade_content_div {
+  margin: 0px auto;
+  text-align: center;
+  height: 100%;
+  width: 100%;
+  margin-top: 20px;
+}
+
+.shade_title {
+  font-size: 20px;
+  text-align: center;
+  font-weight: bold;
+}
+
+.shade_from {
+  margin-top: 20px;
+}
+
+.shade_from .col-xs-12 {
+  margin-top: 20px;
+}
+
+.input_style {
+  float: left;
+  height: 30px;
+  border-radius: 5px;
+  width: 50%;
+  outline: 0px;
+  border: 1px solid #CCCCCC;
+}
+
+.span_style {
+  display: inline-block;
+  float: left;
+  width: 40%;
+  font-size: 15px;
+}
+
+.radio_style {
+  height: 20px;
+  border-radius: 5px;
+  width: 10%;
+  outline: 0px;
+  border: 1px solid #CCCCCC;
+}
+
+.btn_remove {
+  border-radius: 5px;
+  background: #31B0D5;
+  color: white;
+  width: 40%;
+  height: 40px;
+  border: 0px;
+  outline: 0px;
+  font-size: 15px;
+}
+
+.sub_set {
+  border-radius: 5px;
+  background: #31B0D5;
+  color: white;
+  width: 40%;
+  height: 40px;
+  border: 0px;
+  outline: 0px;
+  font-size: 15px;
+}

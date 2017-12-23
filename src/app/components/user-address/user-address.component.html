@@ -1,0 +1,45 @@
+<nav class="navbar navbar-default navbar-fixed-top container-fluid">
+  <ul class="nav row">
+    <li class="col-xs-1">
+      <img routerLink="/personage" src="/assets/image/left_icon.png" style="padding-top: 8px">
+    </li>
+    <li class="col-xs-10">
+      <a class="nav-top">
+        <div id="title" style="text-align: center">User Address</div>
+      </a>
+    </li>
+  </ul>
+</nav>
+
+<div class="nav shade_content_div">
+
+  <div class="col-xs-12 shade_from">
+    <div class="col-xs-12">
+      <span class="span_style">Name :</span>
+      <input class="input_style" [(ngModel)]="userAddress.name"/>
+    </div>
+    <div class="col-xs-12">
+      <span class="span_style">Phone :</span>
+      <input class="input_style" [(ngModel)]="userAddress.phone"/>
+    </div>
+    <div class="col-xs-12">
+      <span class="span_style">Address :</span>
+      <input class="input_style" [(ngModel)]="userAddress.address"/>
+    </div>
+    <div class="col-xs-12">
+      <span class="span_style">Door Number :</span>
+      <input class="input_style" [(ngModel)]="userAddress.doorNumber"/>
+    </div>
+    <div class="col-xs-12">
+      <!--<span class="span_style">Sex :</span>-->
+      <input class="radio_style" value="1" [(ngModel)]="userAddress.gender" type="radio" name="radio-btn" id="radio_male"/>male
+      <input class="radio_style" value="2" [(ngModel)]="userAddress.gender" type="radio" name="radio-btn" id="radio_female"/>female
+    </div>
+
+    <div class="col-xs-12">
+      <input routerLink="/personage" class="btn_remove" type="button" value="cancel"/>
+      <input (click)="onSaveClick()" type="button" class="sub_set" value="save"/>
+
+    </div>
+  </div>
+</div>

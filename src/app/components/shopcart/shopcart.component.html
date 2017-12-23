@@ -1,0 +1,40 @@
+<nav class="navbar navbar-default navbar-fixed-top container-fluid">
+  <ul class="nav row">
+    <li class="col-xs-1">
+      <img routerLink="/shop" src="/assets/image/left_icon.png" style="padding-top: 8px">
+    </li>
+    <li class="col-xs-10">
+      <a class="nav-top">
+        <div id="title" style="text-align: center">ShopCart</div>
+      </a>
+    </li>
+  </ul>
+</nav>
+<div class="container-fluid home-container">
+  <div class="row" id="categories">
+
+    <div *ngFor="let cartProduct of cartProducts" class="category-item">
+      <div class="col-xs-2">
+        <img src="http://oyf9q4qzp.bkt.clouddn.com/{{cartProduct.logo}}">
+      </div>
+      <div class="col-xs-5 line-class">
+        单价 ￥{{cartProduct.price}}
+      </div>
+      <div class="col-xs-5 line-class">
+        <div class="amount" (click)="amountMinus(cartProduct)">-</div>
+        <div class="amount-mid">{{cartProduct.amount}}</div>
+        <div class="amount" (click)="amountPlus(cartProduct)">+</div>
+      </div>
+    </div>
+  </div>
+</div>
+<nav class="navbar navbar-default navbar-fixed-bottom">
+  <div class="col-xs-1">
+    <img class="img-cart" src="/assets/image/cart.png">
+  </div>
+  <div class="col-xs-6">
+    <div id="cart-num">{{ totalNum }}</div>
+  </div>
+  <div class="col-xs-2 total-price">￥{{ totalPrice }}</div>
+  <div (click)="onVerifyClick()" class="col-xs-3 btn-submit">Submit</div>
+</nav>

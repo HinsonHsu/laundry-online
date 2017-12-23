@@ -1,0 +1,11 @@
+.nav-btn{
+  text-align: center;
+  padding: 0px !important;
+  height: 50px;
+  line-height: 50px;
+}
+
+li{
+  display:block;
+  text-align:center;
+}

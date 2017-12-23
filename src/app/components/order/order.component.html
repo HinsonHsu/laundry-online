@@ -1,0 +1,33 @@
+<nav class="navbar navbar-default navbar-fixed-top container-fluid">
+  <ul class="nav row">
+    <li class="col-xs-1">
+      <img routerLink="/shop" src="/assets/image/left_icon.png" style="padding-top: 8px">
+    </li>
+    <li class="col-xs-10">
+      <a class="nav-top">
+        <div id="title" style="text-align: center">Orders</div>
+      </a>
+    </li>
+  </ul>
+</nav>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+</head>
+
+<body>
+<ul class="nav nav-pills" style="background-color:#EEEEE0; margin-top: 50px;">
+  <li id="li-uncompleted" style="width:49%" class="active"><a (click)="onUncompletedClick()">Uncompleted</a></li>
+  <li id="li-completed" style="width:49%"><a (click)="onCompletedClick()">Completed</a></li>
+
+</ul>
+<div *ngFor="let order of orders">
+  <a (click)="onOrderClick(order)" class="list-group-item" style="background-color:#DBDBDB;margin-top:20px;margin-left: 5%;margin-right: 5%">
+    <p class="list-group-item-heading">Order ID:{{order.ordersn}}<span style="padding-left: 100px">$ {{order.orderPrice}}</span></p>
+    <p class="list-group-item-heading">Order Time: {{order.orderTime}}</p>
+    <h4 class="list-group-item-text">Address: {{order.address}}</h4>
+  </a>
+</div>
+
+

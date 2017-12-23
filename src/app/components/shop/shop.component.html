@@ -1,0 +1,12 @@
+<app-headbar></app-headbar>
+<div class="container-fluid home-container">
+  <div class="row" id="categories">
+    <div *ngFor="let category of categories" class="col-xs-6" >
+      <div (click)="onCategoryClick(category)" class="thumbnail category-item"><img
+        src="http://oyf9q4qzp.bkt.clouddn.com/{{category.logo}}">
+        <div class="caption"><h4>{{category.name}}</h4></div>
+      </div>
+    </div>
+  </div>
+</div>
+<app-footbar></app-footbar>

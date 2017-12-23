@@ -1,0 +1,39 @@
+<nav class="navbar navbar-default navbar-fixed-top container-fluid">
+  <ul class="nav row">
+    <li class="col-xs-1">
+      <img routerLink="/shop" src="/assets/image/left_icon.png" style="padding-top: 8px">
+    </li>
+    <li class="col-xs-10">
+      <a class="nav-top">
+        <div id="title" style="text-align: center">Verify Order</div>
+      </a>
+    </li>
+  </ul>
+</nav>
+
+<a routerLink="/address" class="list-group-item" style="background-color:#DBDBDB;   margin-bottom: 20px;">
+  <p class="list-group-item-heading">Order ID：243423<span
+    style="padding-left: 100px">$ {{totalPrice}}</span></p>
+  <p class="list-group-item-heading">Name: {{userAddress.name}}</p>
+  <p class="list-group-item-heading">Phone: {{userAddress.phone}}</p>
+  <p class="list-group-item-text">Address: {{userAddress.address}} {{userAddress.doorNumber}}</p>
+</a>
+
+
+<div *ngFor="let product of cartProducts" class="info">
+  <ul class="list-group" style="margin-bottom: 5px;">
+    <li class="list-group-item" style="height:40px; ">
+      <p style="float:left;">{{product.name}}<span style="margin-left: 30px">x {{product.amount}}</span></p>
+      <p style="float:right">￥{{product.price}}</p>
+    </li>
+  </ul>
+</div>
+
+<nav class="navbar navbar-default navbar-fixed-bottom">
+  <div class="col-xs-1">
+  </div>
+  <div class="col-xs-6">
+  </div>
+  <div class="col-xs-2 total-price">￥{{ totalPrice }}</div>
+  <div (click)="onSubmitClick()" class="col-xs-3 btn-submit">Submit</div>
+</nav>

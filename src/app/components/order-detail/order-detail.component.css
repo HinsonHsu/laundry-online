@@ -1,0 +1,40 @@
+.nav-top{
+  text-align: center;
+  padding: 0px !important;
+  height: 30px;
+  line-height: 40px;
+}
+
+.title-color{
+  background-color: #EEEEE0;
+
+}
+.title-text p{
+  color: #337ab7;
+  font-size:20px;
+  z-index: 1;
+}
+
+
+.back{
+  float: left;
+  margin-left: 20px;
+  margin-top: 13px;
+  z-index: 2;
+  position: relative;
+}
+
+.info{
+  margin-top:5px;
+}
+
+.info li{
+  background-color:#DBDBDB;
+  margin-top:0px;
+
+}
+.list-group-item{
+  margin-top: 70px;
+  margin-left: 5%;
+  margin-right: 5%;
+}

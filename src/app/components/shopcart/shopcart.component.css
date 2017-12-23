@@ -1,0 +1,83 @@
+.category-item img {
+  height: 50px;
+}
+
+.category-item {
+  width: 94%;
+  margin: 0 3%;
+  border: 1px solid #ddd;
+  padding: 10px 20px;
+  height: 70px;
+}
+
+#categories {
+  margin-top: 60px;
+}
+
+.caption {
+  text-align: center;
+  padding: 0;
+  float: left;
+}
+
+.col-xs-12 {
+  padding: 0;
+}
+
+.img-cart {
+  height: 40px;
+  width: 40px;
+}
+
+.total-price {
+  height: 50px;
+  padding-top: 15px;
+}
+
+.btn-submit {
+  height: 50px;
+  background-color: #00dbf5;
+  text-align: center;
+  line-height: 50px;
+}
+
+#cart-num {
+  float: left;
+  width: 15px;
+  height: 15px;
+  border-radius: 15px;
+  margin-left: -10px;
+  margin-top: 5px;
+  background-color: red;
+  text-align: center;
+  font-size: 13px;
+  line-height: 15px;
+}
+
+.amount {
+  border: 1px solid #ddd;
+  width: 25px;
+  height: 25px;
+  margin: 0;
+  padding: 0;
+  float: left;
+  font-size: 25px;
+  text-align: center;
+  line-height: 25px;
+}
+
+.amount-mid {
+  border: 1px solid #ddd;
+  width: 25px;
+  height: 25px;
+  margin: 0;
+  padding: 0;
+  float: left;
+  text-align: center;
+  line-height: 25px;
+}
+
+.line-class {
+  height: 100%;
+  padding-top: 15px;
+}

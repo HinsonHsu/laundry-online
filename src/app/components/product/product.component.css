@@ -1,0 +1,51 @@
+.category-item img {
+  height: 120px;
+}
+
+#categories {
+  margin-top: 60px;
+}
+
+.caption {
+  text-align: center;
+  padding: 0;
+}
+
+.col-xs-4 {
+  padding: 0;
+}
+
+.category-item {
+  margin: 0;
+}
+
+h6 {
+  margin: 5px;
+}
+
+.img-cart {
+  height: 40px;
+  width: 40px;
+}
+.total-price{
+  height: 50px;
+  padding-top: 15px;
+}
+.btn-submit {
+  height: 50px;
+  background-color: #00dbf5;
+  text-align: center;
+  line-height: 50px;
+}
+#cart-num{
+  float: left;
+  width: 15px;
+  height: 15px;
+  border-radius:15px;
+  margin-left: -10px;
+  margin-top: 5px;
+  background-color: red;
+  text-align: center;
+  font-size: 13px;
+  line-height:15px;
+}
