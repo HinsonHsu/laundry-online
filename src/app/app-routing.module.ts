@@ -14,7 +14,7 @@ import { VerifyOrderComponent } from './components/verify-order/verify-order.com
 import { LoginComponent } from './components/login/login.component';
 
 const routes: Routes = [
-  {path: '', redirectTo: '/foot', pathMatch: 'full'},
+  {path: '', redirectTo: '/login', pathMatch: 'full'},
   {path: 'shop', component: ShopComponent},
   {path: 'category/:id', component: ProductComponent},
   {path: 'personage', component: PersonageComponent},
