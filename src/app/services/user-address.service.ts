@@ -14,12 +14,12 @@ export class UserAddressService {
 
   getUserAddress() {
     console.log(this.headers.get('Content-Type'));
-    return this.http.get('http://127.0.0.1:8000/angular/useraddress/', {headers: this.headers})
+    return this.http.get('http://39.106.44.111:8000/angular/useraddress/', {headers: this.headers})
       .map(res => res.json());
   }
 
   setUserAddress(userAddress: UserAddress) {
-    return this.http.put('http://127.0.0.1:8000/angular/useraddress/', JSON.stringify(userAddress), {headers: this.headers})
+    return this.http.put('http://39.106.44.111:8000/angular/useraddress/', JSON.stringify(userAddress), {headers: this.headers})
       .map(res => res.json());
   }
 }

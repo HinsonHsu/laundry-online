@@ -15,17 +15,17 @@ export class OrderService {
   }
 
   getUnCompletedOrders() {
-    return this.http.get('http://127.0.0.1:8000/angular/uncompletedorders/',{headers: this.headers})
+    return this.http.get('http://39.106.44.111:8000/angular/uncompletedorders/',{headers: this.headers})
       .map(res => res.json());
   }
 
   getCompletedOrders() {
-    return this.http.get('http://127.0.0.1:8000/angular/completedorders/',{headers: this.headers})
+    return this.http.get('http://39.106.44.111:8000/angular/completedorders/',{headers: this.headers})
       .map(res => res.json());
   }
 
   getOrderDetailByOrdersn(ordersn: number) {
-    return this.http.get('http://127.0.0.1:8000/angular/orderdetail/' + ordersn)
+    return this.http.get('http://39.106.44.111:8000/angular/orderdetail/' + ordersn)
       .map(res => res.json());
   }
 

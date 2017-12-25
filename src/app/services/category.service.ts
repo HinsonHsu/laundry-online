@@ -12,7 +12,7 @@ export class CategoryService {
   }
 
   getCategories() {
-    return this.http.get('http://127.0.0.1:8000/angular/categories/')
+    return this.http.get('http://39.106.44.111:8000/angular/categories/')
       .map(res => res.json());
   }
 

@@ -9,12 +9,12 @@ export class AuthorityService {
   }
 
   code(phoneMsg: any) {
-    return this.http.post('http://127.0.0.1:8000/angular/angular_code/', JSON.stringify(phoneMsg), {headers: this.headers})
+    return this.http.post('http://39.106.44.111:8000/angular/angular_code/', JSON.stringify(phoneMsg), {headers: this.headers})
       .map(res => res.json());
   }
 
   login(phoneMsg: any) {
-    return this.http.post('http://127.0.0.1:8000/angular/angluar_login/', JSON.stringify(phoneMsg), {headers: this.headers})
+    return this.http.post('http://39.106.44.111:8000/angular/angluar_login/', JSON.stringify(phoneMsg), {headers: this.headers})
       .map(res => res.json());
   }
 }
