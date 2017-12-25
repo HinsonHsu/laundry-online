@@ -21,6 +21,8 @@ import {OrderService} from './services/order.service';
 import { VerifyOrderComponent } from './components/verify-order/verify-order.component';
 import { UserAddressComponent } from './components/user-address/user-address.component';
 import {UserAddressService} from './services/user-address.service';
+import { LoginComponent } from './components/login/login.component';
+import {AuthorityService} from './services/authority.service';
 
 @NgModule({
   declarations: [
@@ -34,19 +36,21 @@ import {UserAddressService} from './services/user-address.service';
     ShopcartComponent,
     OrderDetailComponent,
     VerifyOrderComponent,
-    UserAddressComponent
+    UserAddressComponent,
+    LoginComponent
   ],
   imports: [
     BrowserModule,
     HttpModule,
     AppRoutingModule,
-    FormsModule
+    FormsModule,
   ],
   providers: [
     CategoryService,
     ProductService,
     OrderService,
     UserAddressService,
+    AuthorityService,
   ],
   bootstrap: [AppComponent]
 })

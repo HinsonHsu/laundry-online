@@ -11,15 +11,16 @@ export class OrderService {
   private headers = new Headers({'Content-Type': 'application/json'});
 
   constructor(private http: Http) {
+    this.headers.set('AUTHORIZATION', sessionStorage.getItem('AUTHORIZATION'));
   }
 
   getUnCompletedOrders() {
-    return this.http.get('http://127.0.0.1:8000/angular/uncompletedorders/')
+    return this.http.get('http://127.0.0.1:8000/angular/uncompletedorders/',{headers: this.headers})
       .map(res => res.json());
   }
 
   getCompletedOrders() {
-    return this.http.get('http://127.0.0.1:8000/angular/completedorders/')
+    return this.http.get('http://127.0.0.1:8000/angular/completedorders/',{headers: this.headers})
       .map(res => res.json());
   }
 

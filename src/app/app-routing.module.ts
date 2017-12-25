@@ -11,6 +11,7 @@ import { ShopcartComponent } from './components/shopcart/shopcart.component';
 import { OrderDetailComponent } from './components/order-detail/order-detail.component';
 import { UserAddressComponent } from './components/user-address/user-address.component';
 import { VerifyOrderComponent } from './components/verify-order/verify-order.component';
+import { LoginComponent } from './components/login/login.component';
 
 const routes: Routes = [
   {path: '', redirectTo: '/foot', pathMatch: 'full'},
@@ -23,6 +24,7 @@ const routes: Routes = [
   {path: 'orderdetail/:id', component: OrderDetailComponent},
   {path: 'address', component: UserAddressComponent},
   {path: 'verifyorder', component: VerifyOrderComponent},
+  {path: 'login', component: LoginComponent},
 ];
 
 @NgModule({

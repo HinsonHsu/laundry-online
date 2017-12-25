@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, OnInit} from '@angular/core';
 
 @Component({
   selector: 'app-personage',
@@ -6,8 +6,11 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./personage.component.css']
 })
 export class PersonageComponent implements OnInit {
+  phone: any;
 
-  constructor() { }
+  constructor() {
+    this.phone = sessionStorage.getItem('AUTHORIZATION');
+  }
 
   ngOnInit() {
   }
