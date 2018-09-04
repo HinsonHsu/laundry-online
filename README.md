@@ -32,3 +32,4 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 
 主要包含四个界面
 https://github.com/HinsonHsu/laundry-online/blob/master/online_laundry.jpg
+![Image text](https://github.com/HinsonHsu/laundry-online/blob/master/online_laundry.jpg)
